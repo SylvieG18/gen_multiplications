@@ -1,0 +1,185 @@
+/* fond dégradé */
+body{
+    background-image: linear-gradient(rgb(30, 65, 180),rgb(91, 151, 241));
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+}
+/* premier bloc  */
+#bloc_page{
+    width: 460px;
+    background-color: cornflowerblue;
+    margin: 50px auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgb(4, 4, 104);
+    border-radius: 10px;
+    
+}
+/* titre principal */
+h1{
+    color: rgb(4, 4, 104);
+    font-family: 'Franklin Gothic Medium'; 
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 80px;
+    border-bottom: 10px rgb(4, 4, 104) solid;
+}
+
+/* onglets */
+nav{
+    
+    width: 400px;
+    margin:108px 30px;
+    position: absolute;
+   
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    padding-left: 0;
+    list-style-type: none;
+  
+}
+li{
+    width:25%;
+    background-color:  azure; 
+    text-align: center;
+    border : 1px cornflowerblue solid;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0.6;
+}
+li:hover{
+    opacity: 1;
+    background-image: linear-gradient( rgb(178, 235, 235), azure);
+}
+.encours, li:hover.encours{
+    background-image: linear-gradient(rgb(30, 65, 180),azure);
+    opacity: 1;
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(4, 4, 104);
+}
+a:hover{
+    color: black;
+}
+
+#onglet1, #onglet2{
+    line-height: 42px;
+}
+#onglet1{
+    border-left: none;
+}
+#onglet4{
+    border-right: none;
+}
+
+/* bloc formulaires et résultats */
+#bloc2 {
+    background-color: azure;
+    width: 400px;
+    margin: 150px 30px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 25px rgb(4, 4, 104);
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+}
+/* menu deroulant */
+select{
+    width: 100%;
+}
+
+/* menu avec checkboxes */
+#checkB{
+    column-count: 3;
+    margin: 0;
+    width: 380px;
+    
+}
+
+/* texte choix */
+p{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* taille des listes déoulantes */
+select{
+    width: 40%;
+}
+
+/* boutons envoi */
+input[type=submit]{
+    background-color: darkblue;
+    border: none;
+    padding: 2px 10px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(32, 87, 238);
+    align-self: flex-end;
+}
+
+
+/* affichage des tables */
+#table{
+    border-top: 1px black solid;
+    margin-top: 20px;
+    
+}
+h2, h3{
+    text-align: center;
+    color: rgb(4, 4, 104);
+    
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+h2{
+    border-top: 1px black solid;
+}
+
+.bloc3{
+    column-count: 3;
+    
+}
+/* affichage des interros */
+
+#op{
+    padding-bottom: 20px;
+}
+/* taille de la fenetre de l'input pour la réponse */
+.rep{
+    width: 50px;
+}
+/* resultat */
+.bon{
+    color: green;
+    font-weight: bold;
+}
+.faux{
+    color: red;
+    font-weight: bold;
+}
+.score{
+    width: 80%;
+}
